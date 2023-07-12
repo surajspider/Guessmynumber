@@ -1,0 +1,105 @@
+body {
+    background-color: rgba(35, 2, 2, 0.997);
+}
+
+@media only screen and (min-width:750px) {
+    .top {
+        border-bottom: 5px solid white;
+        /* position: relative; */
+    }
+
+    #playagain {
+        padding: 20px;
+        width: 10%;
+        margin: 20px 0px 0px 20px;
+        font-size: larger;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .para {
+        float: right;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+
+    .oneto100 {
+        color: white;
+        font-size: xx-large;
+        margin: 0;
+    }
+
+    .topic {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .topicp {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .qbox {
+        padding: 50px 70px 50px 70px;
+        background-color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+        width: fit-content;
+        margin: auto;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .left {
+        float: left;
+        /* border: 2px solid white; */
+        margin: 7% 0% 0% 10%;
+    }
+
+    #number {
+        font-size: xx-large;
+        width: 50%;
+        color: white;
+        border: 5px solid white;
+        background-color: rgba(35, 2, 2, 0.997);
+        height: 90px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    .button {
+        margin: auto;
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    #submit {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: large;
+    }
+
+    .right {
+        float: right;
+        /* border: 2px solid white; */
+        width: 40%;
+        margin: 7% 3% 0% 0%;
+    }
+
+    .message {
+        color: white;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .chancesp {
+        color: white;
+        font-size: larger;
+        margin-top: 35px;
+    }
+}

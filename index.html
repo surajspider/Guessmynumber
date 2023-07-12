@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="top">
+            <button id="playagain" onclick="playagain()">Play Again</button>
+            <div class="para">
+                <p class="oneto100">
+                    (Between 1 and 100)
+                </p>
+            </div>
+            <div class="topic">
+                <p class="topicp">
+                    Guess My Number!
+                </p>
+            </div>
+            <div class="qbox" id="qbox">?</div>
+        </div>
+        <div class="left">
+            <input type="number" id="number" onfocus="this.value=''">
+            <div class="button">
+                <button id="submit" onclick="check()">Check!</button> 
+            </div>
+            
+        </div>
+        <div class="right">
+            <p class="message" id="message">Start Guessing...</p>
+            <p class="chancesp">💯 Chances:<span id="chance">100</span></p>
+            <p class="chancesp">🥇 Highscore:<span id="highscore">0</span></p>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
