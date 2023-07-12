@@ -10,22 +10,24 @@ function check() {
     // console.log(randomn);
     // console.log("input:" + number);
     //checking higher 
-    if (number > 100 || number < 1) {
+    if (number === "") {
+        alert("Enter any number as input!!!\nThe input is empty!\nAnyhow you lost 1 chance already. Be careful next time!");
+        document.getElementById("chance").innerText = --chancesnum;
+        console.log(chancesnum);
+
+    }
+    else if ((number > 100) || (number < 1)) {
+        // document.getElementById("chance").innerText = chancesnum;
         alert("Enter valid number!!\nThe range is between 1 and 100");
         document.getElementById("chance").innerText = --chancesnum;
+
     }
     else if (number > randomn) {
         document.getElementById("message").innerText = "Your Guess Is High!";
         chancesnum = chancesnum - 1;
         document.getElementById("chance").innerText = chancesnum;
     }
-    else if (number == "") {
-        // document.getElementById("chance").innerText = chancesnum;
-        alert("Enter any number as input!!!\nThe input is empty!\nAnyhow you lost 1 chance already. Be careful next time!");
-        document.getElementById("chance").innerText = --chancesnum;
-        console.log(chancesnum);
 
-    }
 
     else if (number < randomn) {
         document.getElementById("message").innerText = "Your Guess Is Low!";
